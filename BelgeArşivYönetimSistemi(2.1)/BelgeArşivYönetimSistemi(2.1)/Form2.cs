@@ -23,9 +23,11 @@ namespace BelgeArşivYönetimSistemi_2._1_
             emanet.Show();
             this.Hide();
 
+        }
 
-
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

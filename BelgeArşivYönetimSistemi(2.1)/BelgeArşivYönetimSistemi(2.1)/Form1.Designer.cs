@@ -29,159 +29,159 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.BaslikLbl = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.KullaniciAdiLbl = new System.Windows.Forms.Label();
-            this.SifreLbl = new System.Windows.Forms.Label();
-            this.YetkiLbl = new System.Windows.Forms.Label();
-            this.SifreTxtbx = new System.Windows.Forms.TextBox();
-            this.KullaniciAdiTxtbx = new System.Windows.Forms.TextBox();
-            this.YoneticiRdioBttn = new System.Windows.Forms.RadioButton();
-            this.KullaniciRadioBttn = new System.Windows.Forms.RadioButton();
-            this.CikisBttn = new System.Windows.Forms.Button();
-            this.GirisBttn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            BaslikLbl = new Label();
+            pictureBox1 = new PictureBox();
+            KullaniciAdiLbl = new Label();
+            SifreLbl = new Label();
+            YetkiLbl = new Label();
+            SifreTxtbx = new TextBox();
+            KullaniciAdiTxtbx = new TextBox();
+            YoneticiRdioBttn = new RadioButton();
+            KullaniciRadioBttn = new RadioButton();
+            CikisBttn = new Button();
+            GirisBttn = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // BaslikLbl
             // 
-            this.BaslikLbl.AutoSize = true;
-            this.BaslikLbl.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BaslikLbl.Location = new System.Drawing.Point(227, 81);
-            this.BaslikLbl.Name = "BaslikLbl";
-            this.BaslikLbl.Size = new System.Drawing.Size(319, 41);
-            this.BaslikLbl.TabIndex = 0;
-            this.BaslikLbl.Text = "Belge Arşiv Sistemi";
+            BaslikLbl.AutoSize = true;
+            BaslikLbl.Font = new Font("Constantia", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BaslikLbl.Location = new Point(227, 77);
+            BaslikLbl.Name = "BaslikLbl";
+            BaslikLbl.Size = new Size(256, 33);
+            BaslikLbl.TabIndex = 0;
+            BaslikLbl.Text = "Belge Arşiv Sistemi";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(28, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(143, 131);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // KullaniciAdiLbl
             // 
-            this.KullaniciAdiLbl.AutoSize = true;
-            this.KullaniciAdiLbl.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.KullaniciAdiLbl.Location = new System.Drawing.Point(144, 194);
-            this.KullaniciAdiLbl.Name = "KullaniciAdiLbl";
-            this.KullaniciAdiLbl.Size = new System.Drawing.Size(139, 24);
-            this.KullaniciAdiLbl.TabIndex = 2;
-            this.KullaniciAdiLbl.Text = "Kullanıcı Adı : ";
+            KullaniciAdiLbl.AutoSize = true;
+            KullaniciAdiLbl.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            KullaniciAdiLbl.Location = new Point(144, 184);
+            KullaniciAdiLbl.Name = "KullaniciAdiLbl";
+            KullaniciAdiLbl.Size = new Size(114, 19);
+            KullaniciAdiLbl.TabIndex = 2;
+            KullaniciAdiLbl.Text = "Kullanıcı Adı : ";
             // 
             // SifreLbl
             // 
-            this.SifreLbl.AutoSize = true;
-            this.SifreLbl.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SifreLbl.Location = new System.Drawing.Point(218, 251);
-            this.SifreLbl.Name = "SifreLbl";
-            this.SifreLbl.Size = new System.Drawing.Size(65, 24);
-            this.SifreLbl.TabIndex = 2;
-            this.SifreLbl.Text = "Şifre : ";
+            SifreLbl.AutoSize = true;
+            SifreLbl.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            SifreLbl.Location = new Point(218, 238);
+            SifreLbl.Name = "SifreLbl";
+            SifreLbl.Size = new Size(53, 19);
+            SifreLbl.TabIndex = 2;
+            SifreLbl.Text = "Şifre : ";
             // 
             // YetkiLbl
             // 
-            this.YetkiLbl.AutoSize = true;
-            this.YetkiLbl.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YetkiLbl.Location = new System.Drawing.Point(214, 303);
-            this.YetkiLbl.Name = "YetkiLbl";
-            this.YetkiLbl.Size = new System.Drawing.Size(69, 24);
-            this.YetkiLbl.TabIndex = 2;
-            this.YetkiLbl.Text = "Yetki : ";
+            YetkiLbl.AutoSize = true;
+            YetkiLbl.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            YetkiLbl.Location = new Point(214, 288);
+            YetkiLbl.Name = "YetkiLbl";
+            YetkiLbl.Size = new Size(58, 19);
+            YetkiLbl.TabIndex = 2;
+            YetkiLbl.Text = "Yetki : ";
             // 
             // SifreTxtbx
             // 
-            this.SifreTxtbx.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.SifreTxtbx.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SifreTxtbx.Location = new System.Drawing.Point(289, 242);
-            this.SifreTxtbx.Name = "SifreTxtbx";
-            this.SifreTxtbx.Size = new System.Drawing.Size(212, 32);
-            this.SifreTxtbx.TabIndex = 3;
+            SifreTxtbx.BackColor = SystemColors.ActiveBorder;
+            SifreTxtbx.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            SifreTxtbx.Location = new Point(289, 230);
+            SifreTxtbx.Name = "SifreTxtbx";
+            SifreTxtbx.Size = new Size(212, 27);
+            SifreTxtbx.TabIndex = 3;
             // 
             // KullaniciAdiTxtbx
             // 
-            this.KullaniciAdiTxtbx.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.KullaniciAdiTxtbx.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.KullaniciAdiTxtbx.Location = new System.Drawing.Point(289, 185);
-            this.KullaniciAdiTxtbx.Name = "KullaniciAdiTxtbx";
-            this.KullaniciAdiTxtbx.Size = new System.Drawing.Size(212, 32);
-            this.KullaniciAdiTxtbx.TabIndex = 3;
+            KullaniciAdiTxtbx.BackColor = SystemColors.ActiveBorder;
+            KullaniciAdiTxtbx.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            KullaniciAdiTxtbx.Location = new Point(289, 176);
+            KullaniciAdiTxtbx.Name = "KullaniciAdiTxtbx";
+            KullaniciAdiTxtbx.Size = new Size(212, 27);
+            KullaniciAdiTxtbx.TabIndex = 3;
             // 
             // YoneticiRdioBttn
             // 
-            this.YoneticiRdioBttn.AutoSize = true;
-            this.YoneticiRdioBttn.BackColor = System.Drawing.Color.Transparent;
-            this.YoneticiRdioBttn.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YoneticiRdioBttn.Location = new System.Drawing.Point(302, 303);
-            this.YoneticiRdioBttn.Name = "YoneticiRdioBttn";
-            this.YoneticiRdioBttn.Size = new System.Drawing.Size(91, 25);
-            this.YoneticiRdioBttn.TabIndex = 4;
-            this.YoneticiRdioBttn.TabStop = true;
-            this.YoneticiRdioBttn.Text = "Yönetici";
-            this.YoneticiRdioBttn.UseVisualStyleBackColor = false;
+            YoneticiRdioBttn.AutoSize = true;
+            YoneticiRdioBttn.BackColor = Color.Transparent;
+            YoneticiRdioBttn.Font = new Font("Constantia", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            YoneticiRdioBttn.Location = new Point(302, 288);
+            YoneticiRdioBttn.Name = "YoneticiRdioBttn";
+            YoneticiRdioBttn.Size = new Size(75, 21);
+            YoneticiRdioBttn.TabIndex = 4;
+            YoneticiRdioBttn.TabStop = true;
+            YoneticiRdioBttn.Text = "Yönetici";
+            YoneticiRdioBttn.UseVisualStyleBackColor = false;
             // 
             // KullaniciRadioBttn
             // 
-            this.KullaniciRadioBttn.AutoSize = true;
-            this.KullaniciRadioBttn.BackColor = System.Drawing.Color.Transparent;
-            this.KullaniciRadioBttn.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.KullaniciRadioBttn.Location = new System.Drawing.Point(403, 303);
-            this.KullaniciRadioBttn.Name = "KullaniciRadioBttn";
-            this.KullaniciRadioBttn.Size = new System.Drawing.Size(98, 25);
-            this.KullaniciRadioBttn.TabIndex = 4;
-            this.KullaniciRadioBttn.TabStop = true;
-            this.KullaniciRadioBttn.Text = "Kullanıcı";
-            this.KullaniciRadioBttn.UseVisualStyleBackColor = false;
+            KullaniciRadioBttn.AutoSize = true;
+            KullaniciRadioBttn.BackColor = Color.Transparent;
+            KullaniciRadioBttn.Font = new Font("Constantia", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            KullaniciRadioBttn.Location = new Point(403, 288);
+            KullaniciRadioBttn.Name = "KullaniciRadioBttn";
+            KullaniciRadioBttn.Size = new Size(80, 21);
+            KullaniciRadioBttn.TabIndex = 4;
+            KullaniciRadioBttn.TabStop = true;
+            KullaniciRadioBttn.Text = "Kullanıcı";
+            KullaniciRadioBttn.UseVisualStyleBackColor = false;
             // 
             // CikisBttn
             // 
-            this.CikisBttn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CikisBttn.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CikisBttn.Location = new System.Drawing.Point(398, 364);
-            this.CikisBttn.Name = "CikisBttn";
-            this.CikisBttn.Size = new System.Drawing.Size(103, 49);
-            this.CikisBttn.TabIndex = 5;
-            this.CikisBttn.Text = "Çıkış Yap";
-            this.CikisBttn.UseVisualStyleBackColor = false;
+            CikisBttn.BackColor = SystemColors.ActiveBorder;
+            CikisBttn.Font = new Font("Constantia", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            CikisBttn.Location = new Point(398, 346);
+            CikisBttn.Name = "CikisBttn";
+            CikisBttn.Size = new Size(103, 47);
+            CikisBttn.TabIndex = 5;
+            CikisBttn.Text = "Çıkış Yap";
+            CikisBttn.UseVisualStyleBackColor = false;
             // 
             // GirisBttn
             // 
-            this.GirisBttn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.GirisBttn.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.GirisBttn.Location = new System.Drawing.Point(247, 364);
-            this.GirisBttn.Name = "GirisBttn";
-            this.GirisBttn.Size = new System.Drawing.Size(103, 49);
-            this.GirisBttn.TabIndex = 5;
-            this.GirisBttn.Text = "Giriş Yap";
-            this.GirisBttn.UseVisualStyleBackColor = false;
+            GirisBttn.BackColor = SystemColors.ActiveBorder;
+            GirisBttn.Font = new Font("Constantia", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            GirisBttn.Location = new Point(247, 346);
+            GirisBttn.Name = "GirisBttn";
+            GirisBttn.Size = new Size(103, 47);
+            GirisBttn.TabIndex = 5;
+            GirisBttn.Text = "Giriş Yap";
+            GirisBttn.UseVisualStyleBackColor = false;
+            GirisBttn.Click += GirisBttn_Click_1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
-            this.ClientSize = new System.Drawing.Size(553, 451);
-            this.Controls.Add(this.GirisBttn);
-            this.Controls.Add(this.CikisBttn);
-            this.Controls.Add(this.KullaniciRadioBttn);
-            this.Controls.Add(this.YoneticiRdioBttn);
-            this.Controls.Add(this.KullaniciAdiTxtbx);
-            this.Controls.Add(this.SifreTxtbx);
-            this.Controls.Add(this.YetkiLbl);
-            this.Controls.Add(this.SifreLbl);
-            this.Controls.Add(this.KullaniciAdiLbl);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BaslikLbl);
-            this.Name = "Form1";
-            this.Text = "Ana sayfa";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SeaShell;
+            ClientSize = new Size(553, 428);
+            Controls.Add(GirisBttn);
+            Controls.Add(CikisBttn);
+            Controls.Add(KullaniciRadioBttn);
+            Controls.Add(YoneticiRdioBttn);
+            Controls.Add(KullaniciAdiTxtbx);
+            Controls.Add(SifreTxtbx);
+            Controls.Add(YetkiLbl);
+            Controls.Add(SifreLbl);
+            Controls.Add(KullaniciAdiLbl);
+            Controls.Add(pictureBox1);
+            Controls.Add(BaslikLbl);
+            Name = "Form1";
+            Text = "Ana sayfa";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

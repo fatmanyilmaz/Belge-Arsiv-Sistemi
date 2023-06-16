@@ -11,7 +11,6 @@ namespace BelgeArşivYönetimSistemi_2._1_
             try
             {
                 mySqlConnection.Open();
-                MessageBox.Show("Bağlantı Kuruldu.");
             }
             catch (Exception ex)
             {
@@ -74,7 +73,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
                             adi = kayitOkuma.GetValue(1).ToString();
                             soyadi = kayitOkuma.GetValue(2).ToString();
                             yetki = kayitOkuma.GetValue(3).ToString();
-                            
+
                             break;
 
 
@@ -92,7 +91,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
                             adi = kayitOkuma.GetValue(1).ToString();
                             soyadi = kayitOkuma.GetValue(2).ToString();
                             yetki = kayitOkuma.GetValue(3).ToString();
-                           
+
                             break;
 
 
@@ -117,7 +116,21 @@ namespace BelgeArşivYönetimSistemi_2._1_
             }
         }
 
+        private void GirisBttn_Click_1(object sender, EventArgs e)
+        {
+            if (KullaniciRadioBttn.Checked)
+            {
+                Form3 frm3 = new Form3();
+                frm3.Show();
+                this.Hide();
+            }
 
-
+            else if (YoneticiRdioBttn.Checked)
+            {
+                Form2 frm2 = new Form2();
+                frm2.Show();
+                this.Hide();
+            }
+        }
     }
 }

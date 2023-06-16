@@ -29,11 +29,23 @@ namespace BelgeArşivYönetimSistemi_2._1_
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            Emanet emanet = new Emanet();
-            emanet.Show();
+            EvrakArsivi evrakArsivi = new EvrakArsivi();
+            evrakArsivi.Show();
             this.Hide();
+        }
+
+        private void GirisBttn_Click(object sender, EventArgs e)
+        {
+            EvrakKayit evrakKayit = new EvrakKayit();
+            evrakKayit.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
