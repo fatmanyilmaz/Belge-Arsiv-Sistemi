@@ -39,12 +39,12 @@
             // 
             // comboBox1
             // 
-            comboBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
             comboBox1.Location = new Point(12, 212);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(248, 28);
+            comboBox1.Size = new Size(248, 25);
             comboBox1.TabIndex = 0;
             comboBox1.Text = "LÜTFEN DEPARTMAN SEÇİNİZ";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
@@ -53,7 +53,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(189, 45);
+            label1.Location = new Point(202, 41);
             label1.Name = "label1";
             label1.Size = new Size(332, 30);
             label1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(277, 89);
+            label2.Location = new Point(293, 85);
             label2.Name = "label2";
             label2.Size = new Size(161, 30);
             label2.TabIndex = 2;
@@ -71,17 +71,18 @@
             // 
             // listBox1
             // 
+            listBox1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 19;
-            listBox1.Location = new Point(286, 155);
+            listBox1.ItemHeight = 20;
+            listBox1.Location = new Point(277, 155);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(257, 194);
+            listBox1.Size = new Size(257, 204);
             listBox1.TabIndex = 3;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 28);
+            pictureBox1.Location = new Point(27, 27);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(143, 131);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -92,7 +93,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(555, 378);
+            ClientSize = new Size(564, 390);
             Controls.Add(pictureBox1);
             Controls.Add(listBox1);
             Controls.Add(label2);

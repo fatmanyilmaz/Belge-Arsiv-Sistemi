@@ -39,10 +39,19 @@ namespace BelgeArşivYönetimSistemi_2._1_
 
         private void GirisBttn_Click(object sender, EventArgs e)
         {
+            if (KullaniciRadioBttn.Checked)
+            {
+                Form3 frm3 = new Form3();
+                frm3.Show();
+                this.Hide();
+            }
 
-            EvrakArsivi evrakArsivi = new EvrakArsivi();
-            evrakArsivi.Show();
-
+            else if (YoneticiRdioBttn.Checked)
+            {
+                Form2 frm2 = new Form2();
+                frm2.Show();
+                this.Hide();
+            }
 
             if (hak != 0)
             {
@@ -65,9 +74,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
                             adi = kayitOkuma.GetValue(1).ToString();
                             soyadi = kayitOkuma.GetValue(2).ToString();
                             yetki = kayitOkuma.GetValue(3).ToString();
-                            this.Hide();
-                            Form2 frm2 = new Form2();
-                            frm2.Show();
+                            
                             break;
 
 
@@ -85,9 +92,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
                             adi = kayitOkuma.GetValue(1).ToString();
                             soyadi = kayitOkuma.GetValue(2).ToString();
                             yetki = kayitOkuma.GetValue(3).ToString();
-                            this.Hide();
-                            Form3 frm3 = new Form3();
-                            frm3.Show();
+                           
                             break;
 
 
