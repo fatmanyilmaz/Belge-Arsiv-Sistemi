@@ -34,6 +34,7 @@
             label2 = new Label();
             listBox1 = new ListBox();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -89,16 +90,30 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(27, 329);
+            button1.Name = "button1";
+            button1.Size = new Size(66, 30);
+            button1.TabIndex = 5;
+            button1.Text = "Geri ";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // EvrakArsivi
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(564, 390);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboBox1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "EvrakArsivi";
             Text = "EvrakArsivi";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -113,5 +128,6 @@
         private Label label2;
         private ListBox listBox1;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }

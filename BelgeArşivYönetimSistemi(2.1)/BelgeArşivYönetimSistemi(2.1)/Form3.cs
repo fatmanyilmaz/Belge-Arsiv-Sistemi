@@ -16,5 +16,24 @@ namespace BelgeArşivYönetimSistemi_2._1_
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EvrakArsivi evrakArsivi = new EvrakArsivi();
+            evrakArsivi.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Emanet emanet = new Emanet();
+            emanet.Show();
+            this.Hide();
+        }
     }
 }
