@@ -7,7 +7,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
         {
             InitializeComponent();
             string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
-            MySqlConnection mySqlConnection =new MySqlConnection(mysqlCon);
+            MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon);
             try
             {
                 mySqlConnection.Open();
@@ -39,21 +39,26 @@ namespace BelgeArşivYönetimSistemi_2._1_
 
         private void GirisBttn_Click(object sender, EventArgs e)
         {
+
+            EvrakArsivi evrakArsivi = new EvrakArsivi();
+            evrakArsivi.Show();
+
+
             if (hak != 0)
             {
                 string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
                 MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon);
                 mySqlConnection.Open();
 
-                MySqlCommand selectsorgu=new MySqlCommand("select * from Kullanici",mySqlConnection);
-                MySqlDataReader kayitOkuma=selectsorgu.ExecuteReader();
-                
+                MySqlCommand selectsorgu = new MySqlCommand("select * from Kullanici", mySqlConnection);
+                MySqlDataReader kayitOkuma = selectsorgu.ExecuteReader();
+
                 while (kayitOkuma.Read())
                 {
                     if (YoneticiRdioBttn.Checked == true)
                     {
-                        if (kayitOkuma["kullaniciAd"].ToString()== KullaniciAdiTxtbx.Text && kayitOkuma["sifre"].ToString()== SifreTxtbx.Text && kayitOkuma["yetki"].ToString() == "Yönetici")
-                         {
+                        if (kayitOkuma["kullaniciAd"].ToString() == KullaniciAdiTxtbx.Text && kayitOkuma["sifre"].ToString() == SifreTxtbx.Text && kayitOkuma["yetki"].ToString() == "Yönetici")
+                        {
 
                             durum = true;
                             id = kayitOkuma.GetValue(0).ToString();
@@ -61,16 +66,16 @@ namespace BelgeArşivYönetimSistemi_2._1_
                             soyadi = kayitOkuma.GetValue(2).ToString();
                             yetki = kayitOkuma.GetValue(3).ToString();
                             this.Hide();
-                            Form2 frm2=new Form2();
+                            Form2 frm2 = new Form2();
                             frm2.Show();
                             break;
 
 
 
-                         }
-                                
+                        }
+
                     }
-                    if(KullaniciRadioBttn.Checked == true)
+                    if (KullaniciRadioBttn.Checked == true)
                     {
                         if (kayitOkuma["kullaniciAd"].ToString() == KullaniciAdiTxtbx.Text && kayitOkuma["sifre"].ToString() == SifreTxtbx.Text && kayitOkuma["yetki"].ToString() == "Kullanıcı")
                         {
@@ -94,20 +99,20 @@ namespace BelgeArşivYönetimSistemi_2._1_
 
                 }
                 if (durum == false)
-                
+
                     hak--;
-                 mySqlConnection.Close();
+                mySqlConnection.Close();
 
             }
             if (hak == 0)
             {
                 GirisBttn.Enabled = false;
-                MessageBox.Show("Giriş Hakkınız Dolmuştur.","Belge Arşiv Yönetim Sistemi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Giriş Hakkınız Dolmuştur.", "Belge Arşiv Yönetim Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
         }
 
-       
+
 
     }
 }
