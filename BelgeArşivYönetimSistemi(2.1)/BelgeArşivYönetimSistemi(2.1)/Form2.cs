@@ -16,5 +16,16 @@ namespace BelgeArşivYönetimSistemi_2._1_
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Emanet emanet = new Emanet();
+            emanet.Show();
+            this.Hide();
+
+
+
+
+        }
     }
 }

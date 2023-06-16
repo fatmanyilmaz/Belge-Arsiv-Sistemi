@@ -29,87 +29,85 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            GirisBttn = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.GirisBttn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // GirisBttn
             // 
-            GirisBttn.BackColor = SystemColors.ActiveBorder;
-            GirisBttn.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            GirisBttn.Location = new Point(36, 87);
-            GirisBttn.Name = "GirisBttn";
-            GirisBttn.Size = new Size(156, 128);
-            GirisBttn.TabIndex = 6;
-            GirisBttn.Text = "EVRAK KAYIT EKRANI";
-            GirisBttn.UseVisualStyleBackColor = false;
+            this.GirisBttn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.GirisBttn.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.GirisBttn.Location = new System.Drawing.Point(36, 92);
+            this.GirisBttn.Name = "GirisBttn";
+            this.GirisBttn.Size = new System.Drawing.Size(156, 135);
+            this.GirisBttn.TabIndex = 6;
+            this.GirisBttn.Text = "EVRAK KAYIT EKRANI";
+            this.GirisBttn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveBorder;
-            button1.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(260, 87);
-            button1.Name = "button1";
-            button1.Size = new Size(156, 128);
-            button1.TabIndex = 7;
-            button1.Text = "EVRAK ARŞİVİ EKRANI";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(260, 92);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 135);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "EVRAK ARŞİVİ EKRANI";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.ActiveBorder;
-            button2.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(260, 251);
-            button2.Name = "button2";
-            button2.Size = new Size(156, 128);
-            button2.TabIndex = 8;
-            button2.Text = "ÇIKIŞ YAP";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(260, 264);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(156, 135);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "ÇIKIŞ YAP";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.ActiveBorder;
-            button3.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(36, 251);
-            button3.Name = "button3";
-            button3.Size = new Size(156, 128);
-            button3.TabIndex = 9;
-            button3.Text = "EMANET EKRANI";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(36, 264);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 135);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "EMANET EKRANI";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(191, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(71, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(191, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(442, 405);
-            Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(GirisBttn);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Form3";
-            Text = "Kullanıcı Ekranı";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(510, 444);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.GirisBttn);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form3";
+            this.Text = "Kullanıcı Ekranı";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
