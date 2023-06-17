@@ -58,18 +58,31 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            button4 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
+            label13 = new Label();
+            label14 = new Label();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            textBox12 = new TextBox();
+            comboBox5 = new ComboBox();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            comboBox4 = new ComboBox();
+            button7 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(574, 36);
+            button1.Location = new Point(383, 36);
             button1.Name = "button1";
             button1.Size = new Size(152, 37);
             button1.TabIndex = 0;
@@ -90,7 +103,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(383, 36);
+            button2.Location = new Point(541, 36);
             button2.Name = "button2";
             button2.Size = new Size(185, 37);
             button2.TabIndex = 12;
@@ -112,7 +125,6 @@
             // panel1
             // 
             panel1.Controls.Add(button6);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(label12);
             panel1.Controls.Add(label11);
@@ -353,6 +365,153 @@
             label1.TabIndex = 0;
             label1.Text = "ID:";
             // 
+            // panel2
+            // 
+            panel2.Location = new Point(225, 79);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(501, 384);
+            panel2.TabIndex = 24;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(label13);
+            panel3.Controls.Add(label14);
+            panel3.Controls.Add(textBox10);
+            panel3.Controls.Add(textBox11);
+            panel3.Controls.Add(textBox12);
+            panel3.Controls.Add(comboBox5);
+            panel3.Controls.Add(label15);
+            panel3.Controls.Add(label16);
+            panel3.Controls.Add(label17);
+            panel3.Controls.Add(label18);
+            panel3.Controls.Add(label19);
+            panel3.Controls.Add(comboBox4);
+            panel3.Controls.Add(button7);
+            panel3.Location = new Point(225, 79);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(501, 384);
+            panel3.TabIndex = 0;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Location = new Point(134, 68);
+            label13.Name = "label13";
+            label13.Size = new Size(220, 25);
+            label13.TabIndex = 25;
+            label13.Text = "EVRAK KAYIT SİSTEMİ";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(102, 28);
+            label14.Name = "label14";
+            label14.Size = new Size(297, 25);
+            label14.TabIndex = 24;
+            label14.Text = "BURSA ULUDAĞ ÜNİVERSİTESİ";
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(207, 159);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(184, 26);
+            textBox10.TabIndex = 23;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(207, 191);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(184, 26);
+            textBox11.TabIndex = 22;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(207, 128);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(184, 26);
+            textBox12.TabIndex = 21;
+            // 
+            // comboBox5
+            // 
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
+            comboBox5.Location = new Point(207, 262);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(184, 27);
+            comboBox5.TabIndex = 20;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.Location = new Point(102, 266);
+            label15.Name = "label15";
+            label15.Size = new Size(88, 17);
+            label15.TabIndex = 19;
+            label15.Text = "EVRAK TÜRÜ:";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.Location = new Point(102, 229);
+            label16.Name = "label16";
+            label16.Size = new Size(89, 17);
+            label16.TabIndex = 18;
+            label16.Text = "DEPARTMAN:";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.Location = new Point(134, 195);
+            label17.Name = "label17";
+            label17.Size = new Size(57, 17);
+            label17.TabIndex = 17;
+            label17.Text = "SOYADI:";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Location = new Point(157, 163);
+            label18.Name = "label18";
+            label18.Size = new Size(33, 17);
+            label18.TabIndex = 16;
+            label18.Text = "ADI:";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.Location = new Point(166, 132);
+            label19.Name = "label19";
+            label19.Size = new Size(24, 17);
+            label19.TabIndex = 15;
+            label19.Text = "ID:";
+            // 
+            // comboBox4
+            // 
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
+            comboBox4.Location = new Point(207, 225);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(184, 27);
+            comboBox4.TabIndex = 14;
+            comboBox4.SelectedIndexChanged += comboBox4_SelectedIndexChanged;
+            // 
+            // button7
+            // 
+            button7.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button7.Location = new Point(224, 323);
+            button7.Name = "button7";
+            button7.Size = new Size(85, 34);
+            button7.TabIndex = 13;
+            button7.Text = "KAYDET";
+            button7.UseVisualStyleBackColor = true;
+            // 
             // button4
             // 
             button4.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
@@ -364,30 +523,17 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(panel3);
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(501, 384);
-            panel2.TabIndex = 24;
-            // 
-            // panel3
-            // 
-            panel3.Location = new Point(0, 52);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 100);
-            panel3.TabIndex = 0;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 475);
+            Controls.Add(button2);
+            Controls.Add(panel2);
+            Controls.Add(panel3);
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(panel1);
-            Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             MaximizeBox = false;
@@ -397,7 +543,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -435,5 +582,18 @@
         private Label label1;
         private Panel panel2;
         private Panel panel3;
+        private Label label13;
+        private Label label14;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private TextBox textBox12;
+        private ComboBox comboBox5;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private ComboBox comboBox4;
+        private Button button7;
     }
 }
