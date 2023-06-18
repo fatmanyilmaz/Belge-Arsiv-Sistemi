@@ -54,14 +54,14 @@ namespace BelgeArşivYönetimSistemi_2._1_
         private void button3_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = true;
-            panel2.Visible = false;
+            panel4.Visible = false;
             panel3.Visible = false;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = false;
-            panel2.Visible = true;
+            panel4.Visible = true;
             panel3.Visible = false;
         }
 
@@ -69,7 +69,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
         {
             panel1.Visible = false;
             panel3.Visible = true;
-            panel2.Visible = false;
+            panel4.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "waIIo2SsKyg1o1aMtMEE8widtYpHYcxMQAsBv/ReVvzQmQow7lYk2uj1XmvxtYnQ6+XMr+3hTRBERDOuCuJppg==",
+  "dgSpecHash": "nIRrmRQmi3iwLPNHKlI6qFmK8m+dVCR7hElqb5whbJWtE7NRCqzHaZCQAXlYdKCb8engzjuNVhtPHfQWdJukdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi7\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
+  "projectFilePath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi8\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

@@ -58,7 +58,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            panel2 = new Panel();
             panel3 = new Panel();
             label13 = new Label();
             label14 = new Label();
@@ -74,6 +73,7 @@
             comboBox4 = new ComboBox();
             button7 = new Button();
             button4 = new Button();
+            panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -365,13 +365,6 @@
             label1.TabIndex = 0;
             label1.Text = "ID:";
             // 
-            // panel2
-            // 
-            panel2.Location = new Point(225, 79);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(501, 384);
-            panel2.TabIndex = 24;
-            // 
             // panel3
             // 
             panel3.Controls.Add(label13);
@@ -523,13 +516,20 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // panel4
+            // 
+            panel4.Location = new Point(225, 79);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(501, 384);
+            panel4.TabIndex = 26;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 475);
+            Controls.Add(panel4);
             Controls.Add(button2);
-            Controls.Add(panel2);
             Controls.Add(panel3);
             Controls.Add(button3);
             Controls.Add(button4);
@@ -595,5 +595,8 @@
         private Label label19;
         private ComboBox comboBox4;
         private Button button7;
+        private Button button8;
+        private Label label20;
+        private Panel panel4;
     }
 }
