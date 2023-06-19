@@ -132,5 +132,10 @@ namespace BelgeArşivYönetimSistemi_2._1_
                 this.Hide();
             }
         }
+
+        private void CikisBttn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

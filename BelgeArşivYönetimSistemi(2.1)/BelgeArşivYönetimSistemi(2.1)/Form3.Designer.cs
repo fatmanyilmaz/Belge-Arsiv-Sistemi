@@ -52,6 +52,7 @@
             label3 = new Label();
             comboBox2 = new ComboBox();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -297,11 +298,24 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = SystemColors.ActiveBorder;
+            button4.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(50, 368);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 35);
+            button4.TabIndex = 12;
+            button4.Text = "GERİ";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(623, 458);
+            Controls.Add(button4);
             Controls.Add(panel2);
             Controls.Add(GirisBttn);
             Controls.Add(panel1);
@@ -345,5 +359,6 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
+        private Button button4;
     }
 }

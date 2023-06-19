@@ -208,5 +208,12 @@ namespace BelgeArşivYönetimSistemi_2._1_
             }
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

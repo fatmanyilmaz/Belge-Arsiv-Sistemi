@@ -147,6 +147,7 @@
             CikisBttn.TabIndex = 5;
             CikisBttn.Text = "Çıkış Yap";
             CikisBttn.UseVisualStyleBackColor = false;
+            CikisBttn.Click += CikisBttn_Click;
             // 
             // GirisBttn
             // 
