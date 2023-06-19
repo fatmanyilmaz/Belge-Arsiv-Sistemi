@@ -1741,11 +1741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi11\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi00\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
       "projectName": "BelgeArşivYönetimSistemi(2.1)",
-      "projectPath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi11\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
+      "projectPath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi00\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1).csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi11\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Source\\Repos\\Belge-Arsiv-Sistemi00\\BelgeArşivYönetimSistemi(2.1)\\BelgeArşivYönetimSistemi(2.1)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -203,6 +203,18 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     cmd.ExecuteNonQuery();
                 }
             }
+            if (!string.IsNullOrEmpty(textBox1.Text) &&
+            !string.IsNullOrEmpty(textBox2.Text) &&
+            !string.IsNullOrEmpty(textBox3.Text) &&
+            comboBox3.SelectedIndex != -1 &&
+            comboBox2.SelectedIndex != -1)
+            {
+                MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

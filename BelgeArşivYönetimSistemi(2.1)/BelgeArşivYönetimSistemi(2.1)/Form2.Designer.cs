@@ -60,6 +60,22 @@
             label1 = new Label();
             panel3 = new Panel();
             panel4 = new Panel();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            label27 = new Label();
+            label28 = new Label();
+            comboBox2 = new ComboBox();
+            label26 = new Label();
+            label25 = new Label();
+            label24 = new Label();
+            label23 = new Label();
+            button10 = new Button();
+            textBox17 = new TextBox();
+            textBox16 = new TextBox();
+            textBox14 = new TextBox();
+            textBox13 = new TextBox();
+            label22 = new Label();
+            label21 = new Label();
             label13 = new Label();
             label14 = new Label();
             textBox10 = new TextBox();
@@ -78,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -391,10 +408,179 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(radioButton2);
+            panel4.Controls.Add(radioButton1);
+            panel4.Controls.Add(label27);
+            panel4.Controls.Add(label28);
+            panel4.Controls.Add(comboBox2);
+            panel4.Controls.Add(label26);
+            panel4.Controls.Add(label25);
+            panel4.Controls.Add(label24);
+            panel4.Controls.Add(label23);
+            panel4.Controls.Add(button10);
+            panel4.Controls.Add(textBox17);
+            panel4.Controls.Add(textBox16);
+            panel4.Controls.Add(textBox14);
+            panel4.Controls.Add(textBox13);
+            panel4.Controls.Add(label22);
+            panel4.Controls.Add(label21);
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(501, 384);
             panel4.TabIndex = 26;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButton2.Location = new Point(316, 279);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(75, 21);
+            radioButton2.TabIndex = 29;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Kullanıcı";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButton1.Location = new Point(236, 279);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(73, 21);
+            radioButton1.TabIndex = 28;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Yönetici";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label27.Location = new Point(132, 64);
+            label27.Name = "label27";
+            label27.Size = new Size(259, 25);
+            label27.TabIndex = 27;
+            label27.Text = "KULLANICI KAYIT SİSTEMİ";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label28.Location = new Point(112, 28);
+            label28.Name = "label28";
+            label28.Size = new Size(297, 25);
+            label28.TabIndex = 26;
+            label28.Text = "BURSA ULUDAĞ ÜNİVERSİTESİ";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
+            comboBox2.Location = new Point(236, 181);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(129, 27);
+            comboBox2.TabIndex = 17;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label26.Location = new Point(171, 281);
+            label26.Name = "label26";
+            label26.Size = new Size(45, 17);
+            label26.TabIndex = 16;
+            label26.Text = "YETKİ:";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label25.Location = new Point(171, 217);
+            label25.Name = "label25";
+            label25.Size = new Size(42, 17);
+            label25.TabIndex = 15;
+            label25.Text = "MAİL:";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label24.Location = new Point(124, 249);
+            label24.Name = "label24";
+            label24.Size = new Size(92, 17);
+            label24.TabIndex = 14;
+            label24.Text = "KULLANICI ID:";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Location = new Point(124, 185);
+            label23.Name = "label23";
+            label23.Size = new Size(89, 17);
+            label23.TabIndex = 13;
+            label23.Text = "DEPARTMAN:";
+            // 
+            // button10
+            // 
+            button10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button10.Location = new Point(235, 329);
+            button10.Name = "button10";
+            button10.Size = new Size(78, 34);
+            button10.TabIndex = 12;
+            button10.Text = "KAYDET";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(236, 245);
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(129, 26);
+            textBox17.TabIndex = 10;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(236, 213);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(129, 26);
+            textBox16.TabIndex = 9;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(236, 149);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(129, 26);
+            textBox14.TabIndex = 7;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(236, 117);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(129, 26);
+            textBox13.TabIndex = 6;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.Location = new Point(161, 153);
+            label22.Name = "label22";
+            label22.Size = new Size(53, 17);
+            label22.TabIndex = 1;
+            label22.Text = "SOYAD:";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.Location = new Point(184, 120);
+            label21.Name = "label21";
+            label21.Size = new Size(29, 17);
+            label21.TabIndex = 0;
+            label21.Text = "AD:";
+            label21.Click += label21_Click;
             // 
             // label13
             // 
@@ -543,7 +729,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(743, 475);
+            ClientSize = new Size(748, 475);
             Controls.Add(button9);
             Controls.Add(button2);
             Controls.Add(panel3);
@@ -561,6 +747,8 @@
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -615,5 +803,21 @@
         private Label label20;
         private Panel panel4;
         private Button button9;
+        private Label label22;
+        private Label label21;
+        private Button button10;
+        private TextBox textBox17;
+        private TextBox textBox16;
+        private TextBox textBox14;
+        private TextBox textBox13;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
+        private Label label27;
+        private Label label28;
+        private ComboBox comboBox2;
+        private Label label26;
+        private Label label25;
+        private Label label24;
+        private Label label23;
     }
 }

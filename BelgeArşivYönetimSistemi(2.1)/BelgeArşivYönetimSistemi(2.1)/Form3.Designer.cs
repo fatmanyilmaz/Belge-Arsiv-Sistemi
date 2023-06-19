@@ -60,11 +60,11 @@
             // 
             // GirisBttn
             // 
-            GirisBttn.BackColor = SystemColors.ActiveBorder;
+            GirisBttn.BackColor = Color.Transparent;
             GirisBttn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            GirisBttn.Location = new Point(413, 12);
+            GirisBttn.Location = new Point(413, 22);
             GirisBttn.Name = "GirisBttn";
-            GirisBttn.Size = new Size(156, 45);
+            GirisBttn.Size = new Size(156, 35);
             GirisBttn.TabIndex = 6;
             GirisBttn.Text = "EVRAK KAYIT EKRANI";
             GirisBttn.UseVisualStyleBackColor = false;
@@ -72,11 +72,11 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveBorder;
+            button1.BackColor = Color.Transparent;
             button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(237, 12);
+            button1.Location = new Point(242, 22);
             button1.Name = "button1";
-            button1.Size = new Size(156, 45);
+            button1.Size = new Size(156, 35);
             button1.TabIndex = 7;
             button1.Text = "EVRAK ARŞİVİ EKRANI";
             button1.UseVisualStyleBackColor = false;
@@ -84,7 +84,7 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.ActiveBorder;
+            button2.BackColor = Color.Transparent;
             button2.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(50, 409);
             button2.Name = "button2";
@@ -110,9 +110,9 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(listBox1);
-            panel1.Location = new Point(210, 53);
+            panel1.Location = new Point(210, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(389, 391);
+            panel1.Size = new Size(389, 381);
             panel1.TabIndex = 11;
             // 
             // comboBox1
@@ -172,9 +172,9 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(comboBox2);
             panel2.Controls.Add(button3);
-            panel2.Location = new Point(210, 53);
+            panel2.Location = new Point(210, 63);
             panel2.Name = "panel2";
-            panel2.Size = new Size(389, 391);
+            panel2.Size = new Size(389, 381);
             panel2.TabIndex = 8;
             // 
             // label9
@@ -300,7 +300,7 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.ActiveBorder;
+            button4.BackColor = Color.Transparent;
             button4.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(50, 368);
             button4.Name = "button4";

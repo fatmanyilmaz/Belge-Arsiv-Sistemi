@@ -65,8 +65,8 @@ namespace BelgeArşivYönetimSistemi_2._1_
         private void button2_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = false;
-            panel4.Visible = true;
             panel3.Visible = false;
+            panel4.Visible = true;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -169,6 +169,19 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     komut.ExecuteNonQuery();
                 }
             }
+            if (!string.IsNullOrEmpty(textBox1.Text) &&
+            !string.IsNullOrEmpty(textBox2.Text) &&
+            !string.IsNullOrEmpty(textBox3.Text) &&
+            !string.IsNullOrEmpty(textBox4.Text) &&
+            !string.IsNullOrEmpty(textBox5.Text) &&
+            comboBox1.SelectedIndex != -1)
+            {
+                MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -186,6 +199,18 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     komut.Parameters.AddWithValue("@EmanetVerenMail", textBox8.Text);
                     komut.ExecuteNonQuery();
                 }
+            }
+            if (!string.IsNullOrEmpty(textBox6.Text) &&
+            !string.IsNullOrEmpty(textBox7.Text) &&
+            !string.IsNullOrEmpty(textBox8.Text) &&
+            !string.IsNullOrEmpty(textBox9.Text))
+
+            {
+                MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -206,7 +231,18 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     komut.ExecuteNonQuery();
                 }
             }
-
+            if (!string.IsNullOrEmpty(textBox10.Text) &&
+            !string.IsNullOrEmpty(textBox11.Text) &&
+            !string.IsNullOrEmpty(textBox12.Text) &&
+            comboBox4.SelectedIndex != -1 &&
+            comboBox5.SelectedIndex != -1)
+            {
+                MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -214,6 +250,53 @@ namespace BelgeArşivYönetimSistemi_2._1_
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
+            using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
+            {
+                mySqlConnection.Open();
+                string query = "INSERT INTO KullaniciKayit (KullaniciAd, KullaniciSoyad, Departman, KullaniciMail, KullaniciId, Yetki) VALUES (@Kullaniciad, @KullaniciSoyad, @Departman, @KullaniciMail, @KullaniciId, @Yetki)";
+                using (MySqlCommand komut = new MySqlCommand(query, mySqlConnection))
+                {
+                    komut.Parameters.AddWithValue("@KullaniciAd", textBox13.Text);
+                    komut.Parameters.AddWithValue("@KullaniciSoyad", textBox14.Text);
+                    komut.Parameters.AddWithValue("@Departman", comboBox2.Text);
+                    komut.Parameters.AddWithValue("@KullaniciId", textBox17.Text);
+                    komut.Parameters.AddWithValue("@KullaniciMail", textBox16.Text);
+                    string selectedValue = string.Empty;
+                    if (radioButton1.Checked)
+                    {
+                        selectedValue = radioButton1.Text;
+                    }
+                    else if (radioButton2.Checked)
+                    {
+                        selectedValue = radioButton2.Text;
+                    }
+                    komut.Parameters.AddWithValue("@Yetki", selectedValue);
+                    komut.ExecuteNonQuery();
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox16.Text) &&
+            !string.IsNullOrEmpty(textBox17.Text) &&
+            !string.IsNullOrEmpty(textBox13.Text) &&
+            !string.IsNullOrEmpty(textBox14.Text) &&
+            (radioButton1.Checked || radioButton2.Checked) &&
+            comboBox2.SelectedIndex != -1)
+            {
+                MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
