@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BelgeArşivYönetimSistemi_2._1_
@@ -182,6 +183,25 @@ namespace BelgeArşivYönetimSistemi_2._1_
                 comboBox3.Items.Add("Danışmanlık Belgeleri");
                 comboBox3.Items.Add("Konferans ve Seminer Belgeleri");
                 comboBox3.Items.Add("Akademik Değerlendirme Belgeleri");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
+            using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
+            {
+                mySqlConnection.Open();
+                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru)";
+                using (MySqlCommand cmd = new MySqlCommand(query, mySqlConnection))
+                {
+                    cmd.Parameters.AddWithValue("@EvrakKayitId", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@EvrakKaydedenAdi", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@EvrakKaydedenSoyadi", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@EvrakKaydedenDepartman", comboBox2.Text);
+                    cmd.Parameters.AddWithValue("@EvrakTuru", comboBox3.Text);
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
     }

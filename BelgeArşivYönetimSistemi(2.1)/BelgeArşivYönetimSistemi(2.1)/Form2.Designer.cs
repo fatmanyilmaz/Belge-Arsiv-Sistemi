@@ -59,6 +59,7 @@
             label2 = new Label();
             label1 = new Label();
             panel3 = new Panel();
+            panel4 = new Panel();
             label13 = new Label();
             label14 = new Label();
             textBox10 = new TextBox();
@@ -73,7 +74,6 @@
             comboBox4 = new ComboBox();
             button7 = new Button();
             button4 = new Button();
-            panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -162,6 +162,7 @@
             button6.TabIndex = 23;
             button6.Text = "KAYDET";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -172,6 +173,7 @@
             button5.TabIndex = 22;
             button5.Text = "KAYDET";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // label12
             // 
@@ -367,6 +369,7 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(panel4);
             panel3.Controls.Add(label13);
             panel3.Controls.Add(label14);
             panel3.Controls.Add(textBox10);
@@ -384,6 +387,13 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(501, 384);
             panel3.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(501, 384);
+            panel4.TabIndex = 26;
             // 
             // label13
             // 
@@ -504,6 +514,7 @@
             button7.TabIndex = 13;
             button7.Text = "KAYDET";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button4
             // 
@@ -516,19 +527,11 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // panel4
-            // 
-            panel4.Location = new Point(225, 79);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(501, 384);
-            panel4.TabIndex = 26;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(767, 475);
-            Controls.Add(panel4);
+            ClientSize = new Size(743, 475);
             Controls.Add(button2);
             Controls.Add(panel3);
             Controls.Add(button3);

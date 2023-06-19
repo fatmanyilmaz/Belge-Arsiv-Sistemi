@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BelgeArşivYönetimSistemi_2._1_
@@ -16,6 +19,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
         public Form2()
         {
             InitializeComponent();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -145,6 +149,64 @@ namespace BelgeArşivYönetimSistemi_2._1_
                 comboBox5.Items.Add("Konferans ve Seminer Belgeleri");
                 comboBox5.Items.Add("Akademik Değerlendirme Belgeleri");
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
+            using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
+            {
+                mySqlConnection.Open();
+                string query = "INSERT INTO Emanet (EmanetAlanId, EmanetAlanAd, EmanetAlanSoyad, TelNo, EmanetAlanMail, EmanetAlanDepartman) VALUES (@EmanetAlanId, @EmanetAlanAd, @EmanetAlanSoyad, @TelNo, @EmanetAlanMail, @EmanetAlanDepartman)";
+                using (MySqlCommand komut = new MySqlCommand(query, mySqlConnection))
+                {
+                    komut.Parameters.AddWithValue("@EmanetAlanId", textBox1.Text);
+                    komut.Parameters.AddWithValue("@EmanetAlanAd", textBox2.Text);
+                    komut.Parameters.AddWithValue("@EmanetAlanSoyad", textBox4.Text);
+                    komut.Parameters.AddWithValue("@TelNo", textBox3.Text);
+                    komut.Parameters.AddWithValue("@EmanetAlanMail", textBox5.Text);
+                    komut.Parameters.AddWithValue("@EmanetAlanDepartman", comboBox1.Text);
+                    komut.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
+            using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
+            {
+                mySqlConnection.Open();
+                string query = "INSERT INTO EmanetV (EmanetVerenId, EmanetVerenAd, EmanetVerenSoyad,EmanetVerenMail) VALUES (@EmanetVerenId, @EmanetVerenAd, @EmanetVerenSoyad, @EmanetVerenMail)";
+                using (MySqlCommand komut = new MySqlCommand(query, mySqlConnection))
+                {
+                    komut.Parameters.AddWithValue("@EmanetVerenId", textBox6.Text);
+                    komut.Parameters.AddWithValue("@EmanetVerenAd", textBox7.Text);
+                    komut.Parameters.AddWithValue("@EmanetVerenSoyad", textBox9.Text);
+                    komut.Parameters.AddWithValue("@EmanetVerenMail", textBox8.Text);
+                    komut.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=172.21.54.3; user=Grup2-2023; database=Grup2-2023; password=NyP:974.cc";
+            using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
+            {
+                mySqlConnection.Open();
+                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru)";
+                using (MySqlCommand komut = new MySqlCommand(query, mySqlConnection))
+                {
+                    komut.Parameters.AddWithValue("@EvrakKayitId", textBox12.Text);
+                    komut.Parameters.AddWithValue("@EvrakKaydedenAdi", textBox10.Text);
+                    komut.Parameters.AddWithValue("@EvrakKaydedenSoyadi", textBox11.Text);
+                    komut.Parameters.AddWithValue("@EvrakKaydedenDepartman", comboBox4.Text);
+                    komut.Parameters.AddWithValue("@EvrakTuru", comboBox5.Text);
+                    komut.ExecuteNonQuery();
+                }
+            }
+
         }
     }
 }

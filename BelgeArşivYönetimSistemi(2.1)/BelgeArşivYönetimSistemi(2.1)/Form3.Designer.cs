@@ -34,6 +34,10 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            label2 = new Label();
+            label1 = new Label();
+            listBox1 = new ListBox();
             panel2 = new Panel();
             label9 = new Label();
             label8 = new Label();
@@ -48,10 +52,6 @@
             label3 = new Label();
             comboBox2 = new ComboBox();
             button3 = new Button();
-            comboBox1 = new ComboBox();
-            label2 = new Label();
-            label1 = new Label();
-            listBox1 = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -114,6 +114,48 @@
             panel1.Size = new Size(389, 391);
             panel1.TabIndex = 11;
             // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
+            comboBox1.Location = new Point(70, 127);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(248, 25);
+            comboBox1.TabIndex = 7;
+            comboBox1.Text = "LÜTFEN DEPARTMAN SEÇİNİZ";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(80, 70);
+            label2.Name = "label2";
+            label2.Size = new Size(220, 25);
+            label2.TabIndex = 6;
+            label2.Text = "EVRAK ARŞİV SİSTEMİ";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(45, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(297, 25);
+            label1.TabIndex = 5;
+            label1.Text = "BURSA ULUDAĞ ÜNİVERSİTESİ";
+            // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 20;
+            listBox1.Location = new Point(70, 170);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(248, 204);
+            listBox1.TabIndex = 4;
+            // 
             // panel2
             // 
             panel2.Controls.Add(label9);
@@ -129,7 +171,7 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(comboBox2);
             panel2.Controls.Add(button3);
-            panel2.Location = new Point(207, 53);
+            panel2.Location = new Point(210, 53);
             panel2.Name = "panel2";
             panel2.Size = new Size(389, 391);
             panel2.TabIndex = 8;
@@ -253,48 +295,7 @@
             button3.TabIndex = 0;
             button3.Text = "KAYDET";
             button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "MUHASEBE", "ÖĞRENCİ İŞLERİ", "BÖLÜM SEKRETERLİĞİ", "FAKÜLTE SEKRETERLİĞİ", "AKADEMİK PERSONEL" });
-            comboBox1.Location = new Point(70, 127);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(248, 25);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "LÜTFEN DEPARTMAN SEÇİNİZ";
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(80, 70);
-            label2.Name = "label2";
-            label2.Size = new Size(220, 25);
-            label2.TabIndex = 6;
-            label2.Text = "EVRAK ARŞİV SİSTEMİ";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(45, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(297, 25);
-            label1.TabIndex = 5;
-            label1.Text = "BURSA ULUDAĞ ÜNİVERSİTESİ";
-            // 
-            // listBox1
-            // 
-            listBox1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(70, 170);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(248, 204);
-            listBox1.TabIndex = 4;
+            button3.Click += button3_Click;
             // 
             // Form3
             // 
