@@ -220,7 +220,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
             using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
             {
                 mySqlConnection.Open();
-                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru)";
+                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru, KayitTarihi, EvrakRaf) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru, @KayitTarihi, @EvrakRaf)";
                 using (MySqlCommand komut = new MySqlCommand(query, mySqlConnection))
                 {
                     komut.Parameters.AddWithValue("@EvrakKayitId", textBox12.Text);
@@ -228,14 +228,19 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     komut.Parameters.AddWithValue("@EvrakKaydedenSoyadi", textBox11.Text);
                     komut.Parameters.AddWithValue("@EvrakKaydedenDepartman", comboBox4.Text);
                     komut.Parameters.AddWithValue("@EvrakTuru", comboBox5.Text);
+                    komut.Parameters.AddWithValue("@KayitTarihi", dateTimePicker1.Text);
+                    komut.Parameters.AddWithValue("@EvrakRaf", textBox15.Text);
                     komut.ExecuteNonQuery();
                 }
             }
             if (!string.IsNullOrEmpty(textBox10.Text) &&
+            (dateTimePicker1.Value == DateTimePicker.MinimumDateTime ||
             !string.IsNullOrEmpty(textBox11.Text) &&
             !string.IsNullOrEmpty(textBox12.Text) &&
+            !string.IsNullOrEmpty(textBox15.Text) &&
             comboBox4.SelectedIndex != -1 &&
-            comboBox5.SelectedIndex != -1)
+            comboBox5.SelectedIndex != -1))
+
             {
                 MessageBox.Show("Başarıyla Kaydedildi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -297,6 +302,13 @@ namespace BelgeArşivYönetimSistemi_2._1_
             {
                 MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "yyyy/MM/dd";
+            dateTimePicker1.ShowUpDown = true;
         }
     }
 }

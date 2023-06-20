@@ -48,67 +48,67 @@ namespace BelgeArşivYönetimSistemi_2._1_
             {
                 listBox1.Items.Clear();
 
-                listBox1.Items.Add("Öğrenci Aidatları ve Ödemeleri");
-                listBox1.Items.Add("Personel Bordroları");
-                listBox1.Items.Add("Satın Alım Evrakları");
-                listBox1.Items.Add("Vergi Beyannameleri ve Raporlar");
-                listBox1.Items.Add("Bütçe Planlaması ve Raporları");
-                listBox1.Items.Add("Gelir - Gider Tabloları");
-                listBox1.Items.Add("Fatura ve Fatura İrsaliyeleri");
+                listBox1.Items.Add("Öğrenci Aidatları ve Ödemeleri, Raf 31");
+                listBox1.Items.Add("Personel Bordroları, Raf 32");
+                listBox1.Items.Add("Satın Alım Evrakları, Raf 33");
+                listBox1.Items.Add("Vergi Beyannameleri ve Raporlar, Raf 34");
+                listBox1.Items.Add("Bütçe Planlaması ve Raporları, Raf 35");
+                listBox1.Items.Add("Gelir - Gider Tabloları, Raf 36");
+                listBox1.Items.Add("Fatura ve Fatura İrsaliyeleri, Raf 37");
             }
 
             if (comboBox1.SelectedItem.ToString() == "ÖĞRENCİ İŞLERİ")
             {
                 listBox1.Items.Clear();
 
-                listBox1.Items.Add("Öğrenci Disiplin Kayıtları");
-                listBox1.Items.Add("Öğrenci İzin ve Rapor Talepleri");
-                listBox1.Items.Add("Diplomalar ve Mezuniyet Bekgeleri");
-                listBox1.Items.Add("Öğrenci Etkinlikleri ve Kulüpler");
-                listBox1.Items.Add("Staj ve İşyeri İlişkileri");
-                listBox1.Items.Add("Öğrenci Sağlık ve Sigorta Belgeleri");
-                listBox1.Items.Add("Akademik Programlar");
-                listBox1.Items.Add("Öğrenci Başvuruları ve Belgeler");
+                listBox1.Items.Add("Öğrenci Disiplin Kayıtları, Raf 23");
+                listBox1.Items.Add("Öğrenci İzin ve Rapor Talepleri, Raf 24");
+                listBox1.Items.Add("Diplomalar ve Mezuniyet Bekgeleri, Raf 25");
+                listBox1.Items.Add("Öğrenci Etkinlikleri ve Kulüpler, Raf 26");
+                listBox1.Items.Add("Staj ve İşyeri İlişkileri, Raf 27");
+                listBox1.Items.Add("Öğrenci Sağlık ve Sigorta Belgeleri, Raf 28");
+                listBox1.Items.Add("Akademik Programlar, Raf 29");
+                listBox1.Items.Add("Öğrenci Başvuruları ve Belgeler, Raf 30");
             }
 
             if (comboBox1.SelectedItem.ToString() == "BÖLÜM SEKRETERLİĞİ")
             {
                 listBox1.Items.Clear();
 
-                listBox1.Items.Add("Öğretim Üyeleri ile İlgili Kayıtlar");
-                listBox1.Items.Add("Ders Programları");
-                listBox1.Items.Add("Bölüm Toplantıları");
-                listBox1.Items.Add("Bölüm Bütçesi ve Harcamalar");
-                listBox1.Items.Add("Öğrenci Danışmanlığı");
-                listBox1.Items.Add("Bölüm Etkinlikleri");
+                listBox1.Items.Add("Öğretim Üyeleri ile İlgili Kayıtlar, Raf 17");
+                listBox1.Items.Add("Ders Programları, Raf 18");
+                listBox1.Items.Add("Bölüm Toplantıları, Raf 19");
+                listBox1.Items.Add("Bölüm Bütçesi ve Harcamalar, Raf 20");
+                listBox1.Items.Add("Öğrenci Danışmanlığı, Raf 21");
+                listBox1.Items.Add("Bölüm Etkinlikleri, Raf 22");
             }
 
             if (comboBox1.SelectedItem.ToString() == "FAKÜLTE SEKRETERLİĞİ")
             {
                 listBox1.Items.Clear();
 
-                listBox1.Items.Add("Fakülte Programları ve Müfredatlar");
-                listBox1.Items.Add("Burs ve Finansal Yardımlar");
-                listBox1.Items.Add("Fakülte Toplantıları");
-                listBox1.Items.Add("Fakülte Bütçesi ve Harcamalar");
-                listBox1.Items.Add("Akreditasyon ve Kalite Güvencesi");
-                listBox1.Items.Add("Fakülte Etkinlikleri");
+                listBox1.Items.Add("Fakülte Programları ve Müfredatlar, Raf 11");
+                listBox1.Items.Add("Burs ve Finansal Yardımlar, Raf 12");
+                listBox1.Items.Add("Fakülte Toplantıları, Raf 13");
+                listBox1.Items.Add("Fakülte Bütçesi ve Harcamalar, Raf 14");
+                listBox1.Items.Add("Akreditasyon ve Kalite Güvencesi, Raf 15");
+                listBox1.Items.Add("Fakülte Etkinlikleri, Raf 16");
             }
 
             if (comboBox1.SelectedItem.ToString() == "AKADEMİK PERSONEL")
             {
                 listBox1.Items.Clear();
 
-                listBox1.Items.Add("Öğrenci Kayıtları");
-                listBox1.Items.Add("Ders Materyalleri");
-                listBox1.Items.Add("Akademik Programlar");
-                listBox1.Items.Add("Araştırma Verileri ve Kaynaklar");
-                listBox1.Items.Add("Akademik İşler ve Yönetim Belgeleri");
-                listBox1.Items.Add("Proje ve Araştırma Başvuruları");
-                listBox1.Items.Add("Yayınlar ve Makaleler");
-                listBox1.Items.Add("Danışmanlık Belgeleri");
-                listBox1.Items.Add("Konferans ve Seminer Belgeleri");
-                listBox1.Items.Add("Akademik Değerlendirme Belgeleri");
+                listBox1.Items.Add("Öğrenci Kayıtları, Raf 1");
+                listBox1.Items.Add("Ders Materyalleri, Raf 2");
+                listBox1.Items.Add("Akademik Programlar, Raf 3");
+                listBox1.Items.Add("Araştırma Verileri ve Kaynaklar, Raf 4");
+                listBox1.Items.Add("Akademik İşler ve Yönetim Belgeleri, Raf 5");
+                listBox1.Items.Add("Proje ve Araştırma Başvuruları, Raf 6");
+                listBox1.Items.Add("Yayınlar ve Makaleler, Raf 7");
+                listBox1.Items.Add("Danışmanlık Belgeleri, Raf 8");
+                listBox1.Items.Add("Konferans ve Seminer Belgeleri, Raf 9");
+                listBox1.Items.Add("Akademik Değerlendirme Belgeleri, Raf 10");
             }
         }
 
@@ -121,13 +121,13 @@ namespace BelgeArşivYönetimSistemi_2._1_
             {
                 comboBox3.Items.Clear();
 
-                comboBox3.Items.Add("Öğrenci Aidatları ve Ödemeleri");
-                comboBox3.Items.Add("Personel Bordroları");
-                comboBox3.Items.Add("Satın Alım Evrakları");
-                comboBox3.Items.Add("Vergi Beyannameleri ve Raporlar");
-                comboBox3.Items.Add("Bütçe Planlaması ve Raporları");
-                comboBox3.Items.Add("Gelir - Gider Tabloları");
-                comboBox3.Items.Add("Fatura ve Fatura İrsaliyeleri");
+                comboBox3.Items.Add("Öğrenci Aidatları ve Ödemeleri, Raf 31");
+                comboBox3.Items.Add("Personel Bordroları, Raf 32");
+                comboBox3.Items.Add("Satın Alım Evrakları, Raf 33");
+                comboBox3.Items.Add("Vergi Beyannameleri ve Raporlar, Raf 34");
+                comboBox3.Items.Add("Bütçe Planlaması ve Raporları, Raf 35");
+                comboBox3.Items.Add("Gelir - Gider Tabloları, Raf 36");
+                comboBox3.Items.Add("Fatura ve Fatura İrsaliyeleri, Raf 37");
 
             }
 
@@ -135,54 +135,54 @@ namespace BelgeArşivYönetimSistemi_2._1_
             {
                 comboBox3.Items.Clear();
 
-                comboBox3.Items.Add("Öğrenci Disiplin Kayıtları");
-                comboBox3.Items.Add("Öğrenci İzin ve Rapor Talepleri");
-                comboBox3.Items.Add("Diplomalar ve Mezuniyet Bekgeleri");
-                comboBox3.Items.Add("Öğrenci Etkinlikleri ve Kulüpler");
-                comboBox3.Items.Add("Staj ve İşyeri İlişkileri");
-                comboBox3.Items.Add("Öğrenci Sağlık ve Sigorta Belgeleri");
-                comboBox3.Items.Add("Akademik Programlar");
-                comboBox3.Items.Add("Öğrenci Başvuruları ve Belgeler");
+                comboBox3.Items.Add("Öğrenci Disiplin Kayıtları, Raf 23");
+                comboBox3.Items.Add("Öğrenci İzin ve Rapor Talepleri, Raf 24");
+                comboBox3.Items.Add("Diplomalar ve Mezuniyet Bekgeleri, Raf 25");
+                comboBox3.Items.Add("Öğrenci Etkinlikleri ve Kulüpler, Raf 26");
+                comboBox3.Items.Add("Staj ve İşyeri İlişkileri, Raf 27");
+                comboBox3.Items.Add("Öğrenci Sağlık ve Sigorta Belgeleri, Raf 28");
+                comboBox3.Items.Add("Akademik Programlar, Raf 29");
+                comboBox3.Items.Add("Öğrenci Başvuruları ve Belgeler, Raf 30");
             }
 
             if (comboBox2.SelectedItem != null && comboBox2.SelectedItem.ToString() == "BÖLÜM SEKRETERLİĞİ")
             {
                 comboBox3.Items.Clear();
 
-                comboBox3.Items.Add("Öğretim Üyeleri ile İlgili Kayıtlar");
-                comboBox3.Items.Add("Ders Programları");
-                comboBox3.Items.Add("Bölüm Toplantıları");
-                comboBox3.Items.Add("Bölüm Bütçesi ve Harcamalar");
-                comboBox3.Items.Add("Öğrenci Danışmanlığı");
-                comboBox3.Items.Add("Bölüm Etkinlikleri");
+                comboBox3.Items.Add("Öğretim Üyeleri ile İlgili Kayıtlar, Raf 17");
+                comboBox3.Items.Add("Ders Programları, Raf 18");
+                comboBox3.Items.Add("Bölüm Toplantıları, Raf 19");
+                comboBox3.Items.Add("Bölüm Bütçesi ve Harcamalar, Raf 20");
+                comboBox3.Items.Add("Öğrenci Danışmanlığı, Raf 21");
+                comboBox3.Items.Add("Bölüm Etkinlikleri, Raf 22");
             }
 
             if (comboBox2.SelectedItem != null && comboBox2.SelectedItem.ToString() == "FAKÜLTE SEKRETERLİĞİ")
             {
                 comboBox3.Items.Clear();
 
-                comboBox3.Items.Add("Fakülte Programları ve Müfredatlar");
-                comboBox3.Items.Add("Burs ve Finansal Yardımlar");
-                comboBox3.Items.Add("Fakülte Toplantıları");
-                comboBox3.Items.Add("Fakülte Bütçesi ve Harcamalar");
-                comboBox3.Items.Add("Akreditasyon ve Kalite Güvencesi");
-                comboBox3.Items.Add("Fakülte Etkinlikleri");
+                comboBox3.Items.Add("Fakülte Programları ve Müfredatlar, Raf 11");
+                comboBox3.Items.Add("Burs ve Finansal Yardımlar, Raf 12");
+                comboBox3.Items.Add("Fakülte Toplantıları, Raf 13");
+                comboBox3.Items.Add("Fakülte Bütçesi ve Harcamalar, Raf 14");
+                comboBox3.Items.Add("Akreditasyon ve Kalite Güvencesi, Raf 15");
+                comboBox3.Items.Add("Fakülte Etkinlikleri, Raf 16");
             }
 
             if (comboBox2.SelectedItem != null && comboBox2.SelectedItem.ToString() == "AKADEMİK PERSONEL")
             {
                 comboBox3.Items.Clear();
 
-                comboBox3.Items.Add("Öğrenci Kayıtları");
-                comboBox3.Items.Add("Ders Materyalleri");
-                comboBox3.Items.Add("Akademik Programlar");
-                comboBox3.Items.Add("Araştırma Verileri ve Kaynaklar");
-                comboBox3.Items.Add("Akademik İşler ve Yönetim Belgeleri");
-                comboBox3.Items.Add("Proje ve Araştırma Başvuruları");
-                comboBox3.Items.Add("Yayınlar ve Makaleler");
-                comboBox3.Items.Add("Danışmanlık Belgeleri");
-                comboBox3.Items.Add("Konferans ve Seminer Belgeleri");
-                comboBox3.Items.Add("Akademik Değerlendirme Belgeleri");
+                comboBox3.Items.Add("Öğrenci Kayıtları, Raf 1");
+                comboBox3.Items.Add("Ders Materyalleri, Raf 2");
+                comboBox3.Items.Add("Akademik Programlar, Raf 3");
+                comboBox3.Items.Add("Araştırma Verileri ve Kaynaklar, Raf 4");
+                comboBox3.Items.Add("Akademik İşler ve Yönetim Belgeleri, Raf 5");
+                comboBox3.Items.Add("Proje ve Araştırma Başvuruları, Raf 6");
+                comboBox3.Items.Add("Yayınlar ve Makaleler, Raf 7");
+                comboBox3.Items.Add("Danışmanlık Belgeleri, Raf 8");
+                comboBox3.Items.Add("Konferans ve Seminer Belgeleri, Raf 9");
+                comboBox3.Items.Add("Akademik Değerlendirme Belgeleri, Raf 10");
             }
         }
 
@@ -192,7 +192,7 @@ namespace BelgeArşivYönetimSistemi_2._1_
             using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon))
             {
                 mySqlConnection.Open();
-                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru)";
+                string query = "INSERT INTO Evrak (EvrakKayitId, EvrakKaydedenAdi, EvrakKaydedenSoyadi, EvrakKaydedenDepartman, EvrakTuru, KayitTarihi, EvrakRaf) VALUES (@EvrakKayitId, @EvrakKaydedenAdi, @EvrakKaydedenSoyadi, @EvrakKaydedenDepartman, @EvrakTuru, @KayitTarihi, @EvrakRaf)";
                 using (MySqlCommand cmd = new MySqlCommand(query, mySqlConnection))
                 {
                     cmd.Parameters.AddWithValue("@EvrakKayitId", textBox1.Text);
@@ -200,6 +200,8 @@ namespace BelgeArşivYönetimSistemi_2._1_
                     cmd.Parameters.AddWithValue("@EvrakKaydedenSoyadi", textBox2.Text);
                     cmd.Parameters.AddWithValue("@EvrakKaydedenDepartman", comboBox2.Text);
                     cmd.Parameters.AddWithValue("@EvrakTuru", comboBox3.Text);
+                    cmd.Parameters.AddWithValue("@KayitTarihi", dateTimePicker1.Text);
+                    cmd.Parameters.AddWithValue("@EvrakRaf", textBox4.Text);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -222,6 +224,13 @@ namespace BelgeArşivYönetimSistemi_2._1_
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "yyyy/MM/dd";
+            dateTimePicker1.ShowUpDown = true;
         }
     }
 }
