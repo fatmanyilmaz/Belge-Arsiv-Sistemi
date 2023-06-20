@@ -71,7 +71,9 @@ Projede veritabanına bağlanılmıştır ve örnek kayıtlar hazırlanılmışt
 3. görselde veritabanındaki evrak kayıtları gösterilmiştir.
 
 
-
+#### Projeyi Hazırlayanlar
+Fatma Nur Yılmaz 131930003
+Gökçen Orhun 
 
 
 
