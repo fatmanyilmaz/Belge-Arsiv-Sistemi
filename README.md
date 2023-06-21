@@ -73,7 +73,7 @@ Projede veritabanına bağlanılmıştır ve örnek kayıtlar hazırlanılmışt
 
 #### Projeyi Hazırlayanlar
 Fatma Nur Yılmaz 131930003
-Gökçen Orhun 
+Gökcen Orhun   131930072
 
 
 
