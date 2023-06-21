@@ -25,9 +25,7 @@ Projede yapılan işlem başarılı olduğunda yukarıdaki gibi bilgi mesajı ve
 ### 2. Emanet Ekranı
 ![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/f9cf5343-ffb0-4295-baaf-47e438fb6fe1)
 
-Emanet ekranında verilen emanetlerin kaydı tutulur. Bu sayede evrak kaybolması durumunda sorumluluk sahibi kişiler belirlenir.
-
-![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/d18647cf-e062-4970-9e24-6295ff7aaee5)
+Emanet ekranında verilen emanetlerin kaydı tutulur. Bu sayede evrak kaybolması durumunda sorumluluk sahibi kişiler belirlenir. <br/>
 
 Emanet sayfasında her departmanın ulaşabileceği evraklar birbirinden ayrılmıştır. Her departman kendini ilgilendiren evraklara erişim sağlayabilir.
 
@@ -79,7 +77,9 @@ Projede veritabanına bağlanılmıştır ve örnek kayıtlar hazırlanılmışt
 #### Projeyi Hazırlayanlar
 Grup 2 <br/>
 Fatma Nur Yılmaz 131930003 <br/>
-Gökcen Orhun   131930072
+Gökcen Orhun  131930072  <br/> 
+Grup üyemiz olan İlayda Akgül adlı, 132130012 numaralı öğrencinin projeye herhangi bir katkısı olmamıştır.
+
 
 
 
