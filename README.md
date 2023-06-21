@@ -45,7 +45,7 @@ Evrak kayıt ekranında yönetici evrakları sisteme girer. Başarılı girişle
 Evrak kayıt ekranında kullanıcılar sisteme departmana ve evrak türüne göre evrak yükleyebilirler. Aynı zamanda yüklenen evrakların fiziksel konumu da belirlenir ve ulaşılmak istendiğinde işleri kolaylaştırır.
 
 ### 2. Evrak Arşiv Ekranı
-![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/a668d096-c708-4980-a067-779e585ffff6)
+![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/54566e8d-eb5c-45a2-821a-a3eeb7b3a34f)
 
 Evrak arşiv ekranında kullanıcı departmanına göre arşivdeki evraklara ulaşabilir. Kullanıcı kendi departmanını seçerek listelenen evraklara erişim sağlayabilir.
 
