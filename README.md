@@ -33,7 +33,9 @@ Emanet sayfasında her departmanın ulaşabileceği evraklar birbirinden ayrılm
 
 
 ### 3. Evrak Kayıt Ekranı
-!!! fotoğraf gelecek.
+![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/a420db83-c486-470f-bedb-27387471f869)
+
+Evrak kayıt ekranında yönetici evrakları sisteme girer. Başarılı girişlerde bilgi mesajı verilirken hata sonucunda bir uyarı mesajı verilir.
 
 
 ## 3. Kullanıcı Ekranı
@@ -72,7 +74,8 @@ Projede veritabanına bağlanılmıştır ve örnek kayıtlar hazırlanılmışt
 
 
 #### Projeyi Hazırlayanlar
-Fatma Nur Yılmaz 131930003
+Grup 2 <br/>
+Fatma Nur Yılmaz 131930003 <br/>
 Gökcen Orhun   131930072
 
 
