@@ -57,6 +57,9 @@ Yukarıdaki örnekte evrak araması çıktısı örneklendirilmiştir.
 
 
 ## 4. Veritabanı Kayıtları
+### Veri Tabanı Tabloları
+![image](https://github.com/fatmanyilmaz/Belge-Arsiv-Sistemi/assets/102298537/d4583254-0dcf-4b36-9465-72ff1faddbe5)
+
 
 Projede veritabanına bağlanılmıştır ve örnek kayıtlar hazırlanılmıştır.
 
